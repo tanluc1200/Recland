@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recland</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="wrapper header-wrapper">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="recland" />
+                </div>
+                <div class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a class="header-nav__link button" href="#"
+                                >Tất Cả Các Job</a
+                            >
+                        </li>
+                        <li class="header-nav__item button-border">
+                            <a class="header-nav__link button" href="#"
+                                >Đăng ký</a
+                            >
+                        </li>
+                        <p class="border"></p>
+                        <li class="header-nav__item button-border button-solid">
+                            <a class="header-nav__link button" href="#"
+                                >Đăng Nhập</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- banner -->
+        <section class="banner">
+            <img
+                class="banner__img"
+                src="./assets/images/banner.png"
+                alt="banner"
+            />
+        </section>
+        <!-- end banner -->
+        <!-- Form search -->
+        <section class="wrapper container">
+            <div class="form-search-layout">
+                <form class="form-search">
+                    <div class="form-search__input">
+                        <svg
+                            class="search-icon"
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M10 19.5126C14.9706 19.5126 19 15.4832 19 10.5126C19 5.54207 14.9706 1.51263 10 1.51263C5.02944 1.51263 1 5.54207 1 10.5126C1 15.4832 5.02944 19.5126 10 19.5126Z"
+                                stroke="#999999"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                        <input
+                            type="text"
+                            placeholder="Nhập vị trí hoặc từ khóa..."
+                        />
+                    </div>
+                    <div class="divide"></div>
+                    <div class="form-search__option">
+                        <div class="form-search__option-left">
+                            <svg
+                                width="18"
+                                height="21"
+                                viewBox="0 0 18 21"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M8.99951 19.5126C7.80104 19.5126 1.5 14.411 1.5 9.07592C1.5 4.89927 4.8571 1.51263 8.99951 1.51263C13.1419 1.51263 16.5 4.89927 16.5 9.07592C16.5 14.411 10.198 19.5126 8.99951 19.5126Z"
+                                    stroke="#999999"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <span>Chọn địa điểm</span>
+                        </div>
+                        <svg
+                            width="18"
+                            height="10"
+                            viewBox="0 0 18 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M16.92 1.46265L10.4 7.98265C9.62999 8.75265 8.36999 8.75265 7.59999 7.98265L1.07999 1.46265"
+                                stroke="#999999"
+                                stroke-width="1.5"
+                                stroke-miterlimit="10"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </div>
+                    <button type="button" class="button button-solid">
+                        Tìm kiếm
+                    </button>
+                </form>
+            </div>
+        </section>
+        <!-- End: Form search -->
+        <!-- List đề xuất -->
+        <div class="list-sugget wrapper">
+            <span class="list-sugget__title">Đề xuất:</span>
+            <ul class="list-sugget__list">
+                <li class="list-sugget__item">
+                    <a href="#" class="list-sugget__link"> Reacjs </a>
+                </li>
+                <li class="list-sugget__item">
+                    <a href="#" class="list-sugget__link">VueJS</a>
+                </li>
+                <li class="list-sugget__item">
+                    <a href="#" class="list-sugget__link">Angular</a>
+                </li>
+                <li class="list-sugget__item">
+                    <a href="#" class="list-sugget__link">Design</a>
+                </li>
+                <li class="list-sugget__item">
+                    <a href="#" class="list-sugget__link">.NET</a>
+                </li>
+                <li class="list-sugget__item">
+                    <a href="#" class="list-sugget__link">PHP</a>
+                </li>
+                <li class="list-sugget__item">
+                    <a href="#" class="list-sugget__link">Java</a>
+                </li>
+                <li class="list-sugget__item">
+                    <a href="#" class="list-sugget__link">Mobile</a>
+                </li>
+            </ul>
+        </div>
+        <!--end: List đề xuất -->
+        <!-- job-header -->
+        <div class="job-header wrapper">
+            <svg
+                width="53"
+                height="53"
+                viewBox="0 0 53 53"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <rect
+                    x="0.0526123"
+                    y="0.0653076"
+                    width="52.8947"
+                    height="52.8947"
+                    rx="26.4474"
+                    fill="white"
+                />
+                <path
+                    d="M38.2867 22.6161C38.2867 30.8677 30.6522 35.734 27.2317 36.8977C26.8262 37.0387 26.1738 37.0387 25.7682 36.8977C24.3048 36.404 22.0656 35.2227 20.0027 33.4066C17.2169 30.9558 14.7133 27.3414 14.7133 22.6161C14.7133 18.9664 17.6401 16.0219 21.2546 16.0219C23.4056 16.0219 25.3098 17.0622 26.5088 18.649C27.6901 17.0622 29.5943 16.0219 31.7454 16.0219C32.6798 16.0219 33.5614 16.2159 34.3725 16.5685C36.6822 17.5911 38.2867 19.9008 38.2867 22.6161Z"
+                    fill="#FE4C4C"
+                />
+            </svg>
+            <h1>Jobs tốt nhất</h1>
+        </div>
+        <!-- end: job-header -->
+        <!-- job content -->
+        <div class="job-content wrapper">
+            <div class="job-content__cart row">
+                <div class="job-content__cart-item column active">
+                    <div class="job-content__cart-top row">
+                        <div class="job-content__cart-top-left row">
+                            <img
+                                src="./assets/images/Content/unsplash_5MlBMYDsGBY.png"
+                                alt="img1"
+                            />
+                            <p>Data Engineer</p>
+                        </div>
+                        <span class="job-content__cart-top-right"
+                            >Full-time</span
+                        >
+                    </div>
+                    <div class="line-item"></div>
+                    <div class="job-content__cart-center row">
+                        <div class="job-content__cart-center__left">
+                            <p>Hoa hồng</p>
+                            <h3>12,000,000 <span>VNĐ</span></h3>
+                        </div>
+                        <div class="border-right"></div>
+                        <div class="job-content__cart-center__right column">
+                            <p>Thưởng</p>
+                            <h3>50,000,000 <span>VNĐ</span></h3>
+                        </div>
+                    </div>
+                    <div class="job-content__cart-bottom row">
+                        <div class="job-content__cart-bottom-left row">
+                            <p>Hà Nội</p>
+                            <p>Onboard</p>
+                        </div>
+                        <div class="job-content__cart-bottom-right">
+                            <p>PREMIUM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-content__cart-item column">
+                    <div class="job-content__cart-top row">
+                        <div class="job-content__cart-top-left row">
+                            <img
+                                src="./assets/images/Content/unsplash_lVVs5skyWoo.png"
+                                alt="img2"
+                            />
+                            <p>
+                                Junior PHP Developer <br />
+                                ~ 15-2...
+                            </p>
+                        </div>
+                        <span class="job-content__cart-top-right"
+                            >Full-time</span
+                        >
+                    </div>
+                    <div class="line-item"></div>
+                    <div class="job-content__cart-center row">
+                        <div class="job-content__cart-center__left">
+                            <p>Hoa hồng</p>
+                            <h3>12,000,000 <span>VNĐ</span></h3>
+                        </div>
+                        <div class="border-right"></div>
+                        <div class="job-content__cart-center__right column">
+                            <p>Thưởng</p>
+                            <h3>50,000,000 <span>VNĐ</span></h3>
+                        </div>
+                    </div>
+                    <div class="job-content__cart-bottom row">
+                        <div class="job-content__cart-bottom-left row">
+                            <p>Hà Nội</p>
+                            <p>Onboard</p>
+                        </div>
+                        <div class="job-content__cart-bottom-right">
+                            <p>PREMIUM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-content__cart-item column">
+                    <div class="job-content__cart-top row">
+                        <div class="job-content__cart-top-left row">
+                            <img
+                                src="./assets/images/Content/unsplash_gTV2osuOsJc.png"
+                                alt="img3"
+                            />
+                            <p>
+                                Senior PHP Developer <br />
+                                ~ Upto 40M
+                            </p>
+                        </div>
+                        <span class="job-content__cart-top-right"
+                            >Full-time</span
+                        >
+                    </div>
+                    <div class="line-item"></div>
+                    <div class="job-content__cart-center row">
+                        <div class="job-content__cart-center__left">
+                            <p>Hoa hồng</p>
+                            <h3>12,000,000 <span>VNĐ</span></h3>
+                        </div>
+                        <div class="border-right"></div>
+                        <div class="job-content__cart-center__right column">
+                            <p>Thưởng</p>
+                            <h3>50,000,000 <span>VNĐ</span></h3>
+                        </div>
+                    </div>
+                    <div class="job-content__cart-bottom row">
+                        <div class="job-content__cart-bottom-left row">
+                            <p>Hà Nội</p>
+                            <p>Onboard</p>
+                        </div>
+                        <div class="job-content__cart-bottom-right">
+                            <p>PREMIUM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-content__cart-item column">
+                    <div class="job-content__cart-top row">
+                        <div class="job-content__cart-top-left row">
+                            <img
+                                src="./assets/images/Content/img4.png"
+                                alt="img4"
+                            />
+                            <p>
+                                Java Software Engineer <br />
+                                (multiple positions)
+                            </p>
+                        </div>
+                        <span class="job-content__cart-top-right"
+                            >Full-time</span
+                        >
+                    </div>
+                    <div class="line-item"></div>
+                    <div class="job-content__cart-center row">
+                        <div class="job-content__cart-center__left">
+                            <p>Hoa hồng</p>
+                            <h3>12,000,000 <span>VNĐ</span></h3>
+                        </div>
+                        <div class="border-right"></div>
+                        <div class="job-content__cart-center__right column">
+                            <p>Thưởng</p>
+                            <h3>50,000,000 <span>VNĐ</span></h3>
+                        </div>
+                    </div>
+                    <div class="job-content__cart-bottom row">
+                        <div class="job-content__cart-bottom-left row">
+                            <p>Hà Nội</p>
+                            <p>Onboard</p>
+                        </div>
+                        <div class="job-content__cart-bottom-right">
+                            <p>PREMIUM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-content__cart-item column">
+                    <div class="job-content__cart-top row">
+                        <div class="job-content__cart-top-left row">
+                            <img
+                                src="./assets/images/Content/img5.png"
+                                alt="img5"
+                            />
+                            <p>
+                                Senior Fullstack <br />
+                                Engineer
+                            </p>
+                        </div>
+                        <span class="job-content__cart-top-right"
+                            >Full-time</span
+                        >
+                    </div>
+                    <div class="line-item"></div>
+                    <div class="job-content__cart-center row">
+                        <div class="job-content__cart-center__left">
+                            <p>Hoa hồng</p>
+                            <h3>12,000,000 <span>VNĐ</span></h3>
+                        </div>
+                        <div class="border-right"></div>
+                        <div class="job-content__cart-center__right column">
+                            <p>Thưởng</p>
+                            <h3>50,000,000 <span>VNĐ</span></h3>
+                        </div>
+                    </div>
+                    <div class="job-content__cart-bottom row">
+                        <div class="job-content__cart-bottom-left row">
+                            <p>Hà Nội</p>
+                            <p>Onboard</p>
+                        </div>
+                        <div class="job-content__cart-bottom-right">
+                            <p>PREMIUM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-content__cart-item column">
+                    <div class="job-content__cart-top row">
+                        <div class="job-content__cart-top-left row">
+                            <img
+                                src="./assets/images/Content/img6.png"
+                                alt="img6"
+                            />
+                            <p>
+                                C++ Network Software <br />
+                                Engineer
+                            </p>
+                        </div>
+                        <span class="job-content__cart-top-right"
+                            >Full-time</span
+                        >
+                    </div>
+                    <div class="line-item"></div>
+                    <div class="job-content__cart-center row">
+                        <div class="job-content__cart-center__left">
+                            <p>Hoa hồng</p>
+                            <h3>12,000,000 <span>VNĐ</span></h3>
+                        </div>
+                        <div class="border-right"></div>
+                        <div class="job-content__cart-center__right column">
+                            <p>Thưởng</p>
+                            <h3>50,000,000 <span>VNĐ</span></h3>
+                        </div>
+                    </div>
+                    <div class="job-content__cart-bottom row">
+                        <div class="job-content__cart-bottom-left row">
+                            <p>Hà Nội</p>
+                            <p>Onboard</p>
+                        </div>
+                        <div class="job-content__cart-bottom-right">
+                            <p>PREMIUM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-content__cart-item column">
+                    <div class="job-content__cart-top row">
+                        <div class="job-content__cart-top-left row">
+                            <img
+                                src="./assets/images/Content/img7.png"
+                                alt="img7"
+                            />
+                            <p>
+                                Junior PHP Developer <br />
+                                ~ 15-2...
+                            </p>
+                        </div>
+                        <span class="job-content__cart-top-right"
+                            >Full-time</span
+                        >
+                    </div>
+                    <div class="line-item"></div>
+                    <div class="job-content__cart-center row">
+                        <div class="job-content__cart-center__left">
+                            <p>Hoa hồng</p>
+                            <h3>12,000,000 <span>VNĐ</span></h3>
+                        </div>
+                        <div class="border-right"></div>
+                        <div class="job-content__cart-center__right column">
+                            <p>Thưởng</p>
+                            <h3>50,000,000 <span>VNĐ</span></h3>
+                        </div>
+                    </div>
+                    <div class="job-content__cart-bottom row">
+                        <div class="job-content__cart-bottom-left row">
+                            <p>Hà Nội</p>
+                            <p>Onboard</p>
+                        </div>
+                        <div class="job-content__cart-bottom-right">
+                            <p>PREMIUM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-content__cart-item column">
+                    <div class="job-content__cart-top row">
+                        <div class="job-content__cart-top-left row">
+                            <img
+                                src="./assets/images/Content/unsplash_lVVs5skyWoo.png"
+                                alt="img8"
+                            />
+                            <p>
+                                Junior PHP Developer <br />
+                                ~ 15-2...
+                            </p>
+                        </div>
+                        <span class="job-content__cart-top-right"
+                            >Full-time</span
+                        >
+                    </div>
+                    <div class="line-item"></div>
+                    <div class="job-content__cart-center row">
+                        <div class="job-content__cart-center__left">
+                            <p>Hoa hồng</p>
+                            <h3>12,000,000 <span>VNĐ</span></h3>
+                        </div>
+                        <div class="border-right"></div>
+                        <div class="job-content__cart-center__right column">
+                            <p>Thưởng</p>
+                            <h3>50,000,000 <span>VNĐ</span></h3>
+                        </div>
+                    </div>
+                    <div class="job-content__cart-bottom row">
+                        <div class="job-content__cart-bottom-left row">
+                            <p>Hà Nội</p>
+                            <p>Onboard</p>
+                        </div>
+                        <div class="job-content__cart-bottom-right">
+                            <p>PREMIUM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-content__cart-item column">
+                    <div class="job-content__cart-top row">
+                        <div class="job-content__cart-top-left row">
+                            <img
+                                src="./assets/images/Content/unsplash_5MlBMYDsGBY.png"
+                                alt="img9"
+                            />
+                            <p>
+                                Junior PHP Developer <br />
+                                ~ 15-2...
+                            </p>
+                        </div>
+                        <span class="job-content__cart-top-right"
+                            >Full-time</span
+                        >
+                    </div>
+                    <div class="line-item"></div>
+                    <div class="job-content__cart-center row">
+                        <div class="job-content__cart-center__left">
+                            <p>Hoa hồng</p>
+                            <h3>12,000,000 <span>VNĐ</span></h3>
+                        </div>
+                        <div class="border-right"></div>
+                        <div class="job-content__cart-center__right column">
+                            <p>Thưởng</p>
+                            <h3>50,000,000 <span>VNĐ</span></h3>
+                        </div>
+                    </div>
+                    <div class="job-content__cart-bottom row">
+                        <div class="job-content__cart-bottom-left row">
+                            <p>Hà Nội</p>
+                            <p>Onboard</p>
+                        </div>
+                        <div class="job-content__cart-bottom-right">
+                            <p>PREMIUM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: job content -->
+        <!-- banner__conten -->
+        <section class="banner__content wrapper">
+            <div class="banner__content-title">
+                <a href="#">Why?</a>
+                <h2>Tại Sao Lựa Chọn Recland?</h2>
+            </div>
+            <div class="banner__content-list row">
+                <div class="banner__content-item1">
+                    <div class="banner__content-item__img">
+                        <img
+                            src="./assets/images/Content/svg/Search.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="banner__content-item1-wrapper column">
+                        <h3>Đa dạng việc làm, thêm nhiều lựa chọn hấp dẫn</h3>
+                        <p>
+                            Hơn 200+ việc làm IT, giúp các bạn REC có một kho
+                            việc làm để các bạn tìm kiếm, sale jobs đến những
+                            ứng viên phù hợp.
+                        </p>
+                    </div>
+                </div>
+                <div class="banner__content-item2">
+                    <div class="banner__content-item__img">
+                        <img
+                            src="./assets/images/Content/svg/Dollar.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="banner__content-item2-wrapper column">
+                        <h3>
+                            Cơ chế hoa hồng hấp dẫn, rõ ràng <br />
+                            và minh bạch
+                        </h3>
+                        <p>
+                            RecLand đem đến cho các bạn REC mức hoa hồng hấp
+                            dẫn, giúp cho các bạn REC có được mức thu nhập tương
+                            xứng mà không cần đến công ty làm việc
+                        </p>
+                    </div>
+                </div>
+                <div class="banner__content-item3">
+                    <div class="banner__content-item__img">
+                        <img
+                            src="./assets/images/Content/svg/Network.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="banner__content-item3-wrapper column">
+                        <h3>
+                            Mở rộng network và học hỏi từ <br />
+                            cộng đồng
+                        </h3>
+                        <p>
+                            RecLand cũng thường xuyên tổ chức những buổi chia
+                            sẻ, buổi offline nhằm giúp các bạn REC trau dồi, học
+                            hỏi và mở rộng được network trong lĩnh vực tuyển
+                            dụng.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: banner__conten -->
+        <!-- Đối tác -->
+        <section class="doitac wrapper">
+            <h2>Đối Tác</h2>
+            <div class="doitac__block row">
+                <div class="doitac__block-img">
+                    <img src="./assets/images/Content/doitac1.png" alt="" />
+                </div>
+                <div class="doitac__block-img">
+                    <img src="./assets/images/Content/doitac2.png" alt="" />
+                </div>
+                <div class="doitac__block-img">
+                    <img src="./assets/images/Content/doitac3.png" alt="" />
+                </div>
+                <div class="doitac__block-img">
+                    <img src="./assets/images/Content/doitac4.png" alt="" />
+                </div>
+                <div class="doitac__block-img">
+                    <img src="./assets/images/Content/doitac5.png" alt="" />
+                </div>
+            </div>
+            <div class="doitac__block-pages row">
+                <div class="doitac__block-pages-item"></div>
+                <div class="doitac__block-pages-item"></div>
+                <div class="doitac__block-pages-item pages-active"></div>
+                <div class="doitac__block-pages-item"></div>
+            </div>
+        </section>
+        <!--end: Đối tác -->
+        <!-- hợp tác -->
+        <section class="hoptac wrapper">
+            <a href="#">Quy trình làm việc</a>
+            <h2>Hợp tác cùng RecLand</h2>
+            <div class="hoptac__block row">
+                <div class="hoptac__block-item item1 column">
+                    <div class="hoptac__block-title">
+                        <h4>1</h4>
+                    </div>
+                    <img src="./assets/images/Content/Add.svg" alt="" />
+                    <h3>Tạo một tài khoản</h3>
+                    <p>Trở thành member trên RecLand</p>
+                </div>
+                <div class="hoptac__block-item item2 column">
+                    <div class="hoptac__block-title">
+                        <h4>2</h4>
+                    </div>
+                    <img src="./assets/images/Content/Search.svg" alt="" />
+                    <h3>Tìm kiếm công việc</h3>
+                    <p>Tìm kiếm công việc phù hợp để mời ứng viên</p>
+                </div>
+                <div class="hoptac__block-item column">
+                    <div class="hoptac__block-title item3 column">
+                        <h4>3</h4>
+                    </div>
+                    <img src="./assets/images/Content/Shield.svg" alt="" />
+                    <h3>Giới thiệu ứng viên</h3>
+                    <p>
+                        Giới thiệu ứng viên vào các vị trí đang tuyển, process
+                        ứng viên và nhận kết quả
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--end: hợp tác -->
+        <footer class="wrapper">
+            <div class="banner-footer row">
+                <div class="banner-footer__block row">
+                    <div class="banner-footer__block-logo">
+                        <img
+                            src="./assets/images/Content/logo-footer.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="banner-footer__block-content column">
+                        <h3>Bạn muốn đến với Recland</h3>
+                        <p>
+                            Chúng tôi sẽ giúp bạn thành công trên con đường
+                            Recer
+                        </p>
+                    </div>
+                </div>
+                <div class="banner-footer__right">
+                    <button>Đăng Ký Ngay</button>
+                </div>
+            </div>
+            <div class="footer-form-search row">
+                <div class="footer-form-search-input row">
+                    <input type="text" placeholder="Enter your email address" />
+                    <a href="#">
+                        <img
+                            src="./assets/images/Content/btn_search.svg"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <div class="footer-form-search-right row">
+                    <div class="footer-form-search-right-item row">
+                        <div class="footer-form-search-right-item-block">
+                            <h4>199</h4>
+                        </div>
+                        <p>Công việc</p>
+                    </div>
+                    <div class="footer-form-search-right-item row">
+                        <div class="footer-form-search-right-item-block">
+                            <h4>93</h4>
+                        </div>
+                        <p>Công ty</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-category row">
+                <ul class="footer-category-block column">
+                    <img src="./assets/images/logo.png" alt="" />
+                    <li class="border-bottem"></li>
+                    <ul class="footer-category-social row">
+                        <li>
+                            <a href="#">
+                                <img
+                                    src="./assets/images/Content/Facebook.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    src="./assets/images/Content/twitter.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    src="./assets/images/Content/linkedin.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    src="./assets/images/Content/instagram (1).svg"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+                <ul class="footer-category-block">
+                    <h3>Địa chỉ</h3>
+                    <li>
+                        <a href="#">
+                            Tòa nhà AC, 78 Duy Tân, Quận Cầu Giấy, Hà Nội
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-category-block">
+                    <h3>Liên hệ</h3>
+                    <li>
+                        <a href="#"> 0369 713 819 </a>
+                    </li>
+                    <li>
+                        <a href="#"> luat.nguyen@recland.co </a>
+                    </li>
+                </ul>
+                <ul class="footer-category-block">
+                    <h3>Menu</h3>
+                    <li>
+                        <a href="#"> Trang chủ </a>
+                    </li>
+                    <li>
+                        <a href="#"> Tìm kiếm công việc </a>
+                    </li>
+                    <li>
+                        <a href="#"> Sitemap </a>
+                    </li>
+                </ul>
+                <ul class="footer-category-block">
+                    <h3>Tài khoản của tôi</h3>
+                    <li>
+                        <a href="#"> Tổng quan </a>
+                    </li>
+                    <li>
+                        <a href="#"> Kho CV </a>
+                    </li>
+                    <li>
+                        <a href="#"> Thông tin cá nhân </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="border-bottem"></div>
+            <p class="footer-copyright">Copyright © 2022 Recland.co</p>
+        </footer>
+        <div class="back-home">
+            <img src="./assets/images/Content/back-home.svg" alt="" />
+        </div>
+    </body>
+</html>

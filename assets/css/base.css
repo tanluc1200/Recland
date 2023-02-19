@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary: #021a84;
+  --secondary: #fe4c4c;
+  --text: #171717;
+  --gray: #999999;
+  --light-gray: #e5e5e5;
+  --background: #f2f2f2;
+  --green-gradient: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    #2ada66;
+  --pupure-gradient: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    #021a84;
+  --red-gradient: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    #e5532a;
+  --red-text: #e5532a;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background-color: var(--background);
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1160px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.button {
+  height: 44px;
+  min-width: 149px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  color: inherit;
+}
+.button-border {
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: linear 0.2s;
+  -webkit-transition: linear 0.2s;
+  -moz-transition: linear 0.2s;
+  -ms-transition: linear 0.2s;
+  -o-transition: linear 0.2s;
+  overflow: hidden;
+}
+.button-border:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.button-solid {
+  background-color: var(--primary);
+  color: var(--light-gray);
+  border-radius: 8px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.border {
+  width: 17px;
+  height: 0px;
+  border: 1px solid #999999;
+  transform: rotate(90deg);
+}
+
+.button-solid:hover::before {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.button-solid::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: #fff;
+  opacity: 0.1;
+  z-index: -1;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.container {
+  padding: 40px 0;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
